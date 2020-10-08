@@ -15,8 +15,8 @@
 
 # JMX configuration
 ---
-version: 2019.8.115
+version: 2019.8.142
 repository_root: https://download.run.pivotal.io/your-kit/{platform}/{architecture}
-enabled: false
+enabled: true
 port: 10001
 default_session_name: $(jq -r -n "$VCAP_APPLICATION | .application_name + \":$CF_INSTANCE_INDEX\"")
